@@ -185,3 +185,4 @@ if st.session_state['show_chat_history'] and st.session_state['chat_history']:
     st.subheader("Chat History:")
     for role, text in st.session_state['chat_history']:
         st.write(f"{role}: {text}")
+
