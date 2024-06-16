@@ -23,8 +23,6 @@
 #     rows = cur.fetchall()
 #     conn.commit()
 #     conn.close()
-#     for row in rows:
-#         print(row)
 #     return rows
 
 # # Define prompt
@@ -70,9 +68,11 @@
 #     st.code(sql_query)
     
 #     st.markdown("<u>Results:</u>", unsafe_allow_html=True)
-#     for row in response:
-#         print(row)
-#         st.text(row)
+#     if response:  # Check if response is not None
+#         for row in response:
+#             st.text(row)
+#     else:
+#         st.text("No results found.")
     
 #     # Append user input and response to chat history
 #     st.session_state['chat_history'].append(("You", question))
@@ -112,10 +112,10 @@ def get_gemini_response(question, prompt):
 # Function to execute SQL query on database and retrieve results
 def read_sql_query(sql, db):
     conn = sqlite3.connect(db)
-    cur =  conn.cursor()
+    conn.row_factory = sqlite3.Row  # Access query results by column name
+    cur = conn.cursor()
     cur.execute(sql)
     rows = cur.fetchall()
-    conn.commit()
     conn.close()
     return rows
 
@@ -164,7 +164,7 @@ if submit:
     st.markdown("<u>Results:</u>", unsafe_allow_html=True)
     if response:  # Check if response is not None
         for row in response:
-            st.text(row)
+            st.text(row['MARKS'])  # Accessing the 'MARKS' column
     else:
         st.text("No results found.")
     
@@ -185,4 +185,3 @@ if st.session_state['show_chat_history'] and st.session_state['chat_history']:
     st.subheader("Chat History:")
     for role, text in st.session_state['chat_history']:
         st.write(f"{role}: {text}")
-
