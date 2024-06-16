@@ -5,24 +5,24 @@ Ask2SQL is a Streamlit web application that allows you to generate instant SQL q
 The following data is used:
 
 ### STUDENT TABLE
-| ID      | Name    | Course         | Grade | Marks |
-|---------|---------|----------------|-------|-------|
-| 1001    | Paridhi | Data Science   | A     | 90    |
-| 1002    | Rishabh | Data Science   | B     | 100   |
-| 1003    | Swastika| Data Science   | A     | 86    |
-| 1004    | Aaryan  | DEVOPS         | A     | 50    |
-| 1005    | Rahul   | DEVOPS         | A     | 35    |
-| 1006    | Sanya   | Data Science   | B     | 92    |
-| 1007    | Aman    | DEVOPS         | B     | 65    |
-| 1008    | Vikram  | Data Science   | A     | 78    |
-| 1009    | Ishita  | AI             | A     | 88    |
-| 1010    | Raj     | AI             | B     | 72    |
-| 1011    | Ananya  | Cyber Security | A     | 95    |
-| 1012    | Kabir   | Cyber Security | B     | 68    |
-| 1013    | Priya   | Data Science   | A     | 89    |
-| 1014    | Nisha   | DEVOPS         | B     | 55    |
-| 1015    | Tara    | AI             | A     | 91    |
-| 1016    | Varun   | Cyber Security | A     | 73    |
+| ID      | NAME    | CLASS          | SECTION | MARKS |
+|---------|---------|----------------|---------|-------|
+| 1001    | Paridhi | Data Science   | A       | 90    |
+| 1002    | Rishabh | Data Science   | B       | 100   |
+| 1003    | Swastika| Data Science   | A       | 86    |
+| 1004    | Aaryan  | DEVOPS         | A       | 50    |
+| 1005    | Rahul   | DEVOPS         | A       | 35    |
+| 1006    | Sanya   | Data Science   | B       | 92    |
+| 1007    | Aman    | DEVOPS         | B       | 65    |
+| 1008    | Vikram  | Data Science   | A       | 78    |
+| 1009    | Ishita  | AI             | A       | 88    |
+| 1010    | Raj     | AI             | B       | 72    |
+| 1011    | Ananya  | Cyber Security | A       | 95    |
+| 1012    | Kabir   | Cyber Security | B       | 68    |
+| 1013    | Priya   | Data Science   | A       | 89    |
+| 1014    | Nisha   | DEVOPS         | B       | 55    |
+| 1015    | Tara    | AI             | A       | 91    |
+| 1016    | Varun   | Cyber Security | A       | 73    |
 
 ## Features
 
