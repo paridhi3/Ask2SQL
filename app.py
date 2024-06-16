@@ -32,11 +32,18 @@ prompt = [
     The SQL database has the name STUDENT and has the following columns - ID, NAME, CLASS, 
     SECTION, MARKS \n\n
     For example,\n
-    Example 1 - "How many entries of records are present?" for which, 
+    Example 1 - "How many entries of records are present?" or "How many students are there?"
+    or "Tell me the total number of students" for which, 
     the SQL command will be something like this SELECT COUNT(*) FROM STUDENT;
     \n
     Example 2 - "Tell me all the students studying in Data Science class?" for which, 
-    the SQL command will be something like this SELECT * FROM STUDENT where CLASS="Data Science"; 
+    the SQL command will be something like this SELECT * FROM STUDENT where CLASS="Data Science";
+    \n
+    Example 3 - "Give me the names of all the students" for which,
+    the SQL command will be something like this: SELECT NAME FROM STUDENT;
+    \n
+    Example 4 - "marks of paridhi" or "What are the marks of paridhi" for which,
+    the SQL command will be something like this: SELECT MARKS FROM STUDENT WHERE NAME="Paridhi";
     
     Also, the SQL code should not have ``` in beginning or end and SQL word in output
     """
