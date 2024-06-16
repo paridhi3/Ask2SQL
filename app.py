@@ -29,7 +29,7 @@ def read_sql_query(sql, db):
 prompt = [
     """
     You are an expert in converting English questions to SQL query!
-    The SQL database has the name STUDENT and has the following columns - NAME, CLASS, 
+    The SQL database has the name STUDENT and has the following columns - ID, NAME, CLASS, 
     SECTION, MARKS \n\n
     For example,\n
     Example 1 - "How many entries of records are present?" for which, 
