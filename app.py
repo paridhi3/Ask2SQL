@@ -124,13 +124,14 @@ prompt = [
     """
     You are an expert in converting English questions to SQL query!
     The SQL database has the name STUDENT and has the following columns - NAME, CLASS, 
-    SECTION \n\n
+    SECTION, MARKS \n\n
     For example,\n
     Example 1 - "How many entries of records are present?" for which, 
     the SQL command will be something like this SELECT COUNT(*) FROM STUDENT;
     \n
     Example 2 - "Tell me all the students studying in Data Science class?" for which, 
     the SQL command will be something like this SELECT * FROM STUDENT where CLASS="Data Science"; 
+    
     Also, the SQL code should not have ``` in beginning or end and SQL word in output
     """
 ]
