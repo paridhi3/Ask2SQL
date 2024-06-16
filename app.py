@@ -117,8 +117,6 @@ def read_sql_query(sql, db):
     rows = cur.fetchall()
     conn.commit()
     conn.close()
-    for row in rows:
-        print(row)
     return rows
 
 # Define prompt
@@ -166,7 +164,6 @@ if submit:
     st.markdown("<u>Results:</u>", unsafe_allow_html=True)
     if response:  # Check if response is not None
         for row in response:
-            print(row)
             st.text(row)
     else:
         st.text("No results found.")
@@ -188,3 +185,4 @@ if st.session_state['show_chat_history'] and st.session_state['chat_history']:
     st.subheader("Chat History:")
     for role, text in st.session_state['chat_history']:
         st.write(f"{role}: {text}")
+
