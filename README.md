@@ -1,4 +1,4 @@
-# [Ask2SQL](https://paridhi3-ask2sql-app-hxyozc.streamlit.app/)
+# [Ask2SQL](https://paridhi3-ask2sql-app-luklck.streamlit.app/)
 
 Ask2SQL is a Streamlit web application that allows you to generate instant SQL queries by asking simple questions using Google Gemini Pro. It seamlessly converts your English questions into SQL queries and executes them on a SQLite database.
 
